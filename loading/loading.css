@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+  
+.circle{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.ring{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    animation: ring 1s linear infinite;
+}
+
+@keyframes ring {
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px red;
+    }
+    20%{
+        transform: rotate(72deg);
+        box-shadow: 1px 5px 2px orange;
+    }
+    40%{
+        transform: rotate(144deg);
+        box-shadow: 1px 5px 2px yellow;
+    }
+    60%{
+        transform: rotate(216deg);
+        box-shadow: 1px 5px 2px green;
+    }
+    80%{
+        transform: rotate(288deg);
+        box-shadow: 1px 5px 2px blue;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px violet;
+    }
+}
+
+.ring:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255,255,255,.3);
+}
+
+span{
+    display: table-cell;
+    color: #ffffff;
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+    line-height: 300px;
+    animation: text 1.75s linear 3;
+}
+
+span:nth-child(1) { animation-delay:  0s;}
+span:nth-child(2) { animation-delay: .1s;}
+span:nth-child(3) { animation-delay: .2s;}
+span:nth-child(4) { animation-delay: .3s;}
+span:nth-child(5) { animation-delay: .4s;}
+span:nth-child(6) { animation-delay: .5s;}
+span:nth-child(7) { animation-delay: .6s;}
+span:nth-child(8) { animation-delay: .7s;}
+
+
+@keyframes text {
+    0%{
+        font-size: 68px;
+        margin-top: 0px;
+    }
+    25%{
+        font-size: 76px;
+        margin-top: -25px;
+    }
+    50%{
+        font-size: 80px;
+        margin-top: -50px;
+    }
+    75%{
+        font-size: 76px;
+        margin-top: -25px;
+    }
+    100%{
+        font-size: 68px;
+        margin-top: -0px;
+    }
+}
+  

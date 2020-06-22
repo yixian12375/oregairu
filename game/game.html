@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <head>
+        <title>Game-teacher</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="jquery-slotmachine/styles/style.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="jquery-slotmachine/dist/jquery.slotmachine.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="game.css">
+        <link rel="stylesheet" href="multiple.css">
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="jquery-slotmachine/dist/slotmachine.js"></script>
+        <script src="jquery-slotmachine/dist/jquery.slotmachine.js"></script>
+        <script src="jquery-slotmachine/main.js"></script>
+        <script src="audio.js"></script>
+        <script src="playlist.js"></script>
+        <script src="gamelist.js"></script>
+        <script src="multiple.js"></script>
+        <script src="game.js"></script>
+        
+    </head>
+    <body>
+        <audio id="song1" preload loop>
+            <source src="../musicplay/bgm/bgm1.mp3" type="audio/mpeg" />
+        </audio>
+        <audio id="song2" preload loop>
+            <source src="../musicplay/bgm/bgm7.mp3" type="audio/mpeg" />
+        </audio>
+        <audio id="song3" preload >
+            <source src="../musicplay/bgm/bgm2.mp3" type="audio/mpeg" />
+        </audio>
+        <div class="bgmPlayer">
+            <img src="../image/mute.jpg" id="bgmIcon">
+        </div>
+        <div class="top">
+            <!-- <div id="player"></div> -->
+        </div>
+        <div class="bottom">
+            <div id="left">
+                <div id="char">
+                    <a href='https://zh.moegirl.org/zh-tw/%E6%AF%94%E4%BC%81%E8%B0%B7%E5%85%AB%E5%B9%A1' target='_blank'><img src='../image/old_teacher.jpg' alt='teacher' id='teacher'></img></a>
+                </div>
+                <div class="battery">
+                    <div class="anode"></div>
+                    <div class="charge1"></div>
+                    <div class="charge2"></div>
+                    <div class="charge3"></div>
+                    <div class="charge4"></div>
+                </div>
+            </div>
+            <div id="right">
+                <div class="container">
+                    <div class="row">
+            
+                        <div class="frame frm1">
+                            <div>
+                                <div id="machine1" class="randomizeMachine">
+                                    <div><img src="jquery-slotmachine/img/slot1.png" /></div>
+                                    <div><img src="jquery-slotmachine/img/slot2.png" /></div>
+                                    <div><img src="jquery-slotmachine/img/slot3.png" /></div>
+                                    <div><img src="jquery-slotmachine/img/slot4.png" /></div>
+                                    <div><img src="jquery-slotmachine/img/slot5.png" /></div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="frame frm2">
+                            <div>
+                                <div id="machine2" class="randomizeMachine">
+                                    <div><img src="jquery-slotmachine/img/slot1.png" /></div>
+                                    <div><img src="jquery-slotmachine/img/slot2.png" /></div>
+                                    <div><img src="jquery-slotmachine/img/slot3.png" /></div>
+                                    <div><img src="jquery-slotmachine/img/slot4.png" /></div>
+                                    <div><img src="jquery-slotmachine/img/slot5.png" /></div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="frame frm3">
+                            <div>
+                                <div id="machine3" class="randomizeMachine">
+                                    <div><img src="jquery-slotmachine/img/slot1.png" /></div>
+                                    <div><img src="jquery-slotmachine/img/slot2.png" /></div>
+                                    <div><img src="jquery-slotmachine/img/slot3.png" /></div>
+                                    <div><img src="jquery-slotmachine/img/slot4.png" /></div>
+                                    <div><img src="jquery-slotmachine/img/slot5.png" /></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div><button id="randomizeButton">CLICK</button></div>
+                    <div><button id="nextButton">NEXT</button></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

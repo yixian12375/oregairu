@@ -1,0 +1,148 @@
+
+.guess{
+    margin: auto;
+    text-align: center;
+}
+
+#inputDate{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 24px;
+}
+
+#confirm{
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+.quiz{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#question{
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#options{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: left;
+}
+
+label{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px;
+}
+
+input[type="radio"]{
+    margin-right: 20px;
+    animation: jump 1.5s linear infinite;
+}
+
+input[type="radio"]:checked{
+    margin-right: 20px;
+    box-shadow: 0 0 0 3px red;
+}
+
+
+label:hover{
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 600%;
+    z-index: 1;
+    animation: glow 8s linear infinite;
+    border-radius: 100px;
+}
+
+label:hover:before{
+    opacity: 1;
+    z-index: -1;
+}
+
+input:checked + label {
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 600%;
+    z-index: 1;
+    animation: glow 8s linear infinite;
+    animation: jump .6s linear 3;
+    border-radius: 100px;
+}
+
+@keyframes jump {
+    0%{
+        font-size: 100%;
+    }
+    25%{
+        font-size: 105%;
+    }
+    50%{
+        font-size: 110%;
+    }
+    75%{
+        font-size: 105%;
+    }
+    100%{
+        font-size: 100%;
+    }
+}
+
+#startButton, #evolution{
+    height: 50px;
+    width: 200px;
+    position: relative;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: #111;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+#startButton, #evolution:hover{
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+}
+
+#startButton, #evolution:before{
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+#startButton, #evolution:hover:before{
+    opacity: 1;
+    z-index: -1;
+}
+
+#startButton, #evolution:hover{
+    z-index: 1;
+    animation: glow 8s linear infinite;
+}
+
+@keyframes glow {
+    0%{
+      background-position: 0%;
+    }
+    100%{
+      background-position: 400%;
+    }
+}
+
+#player{
+    border: 3px solid red;
+    width: 60%;
+    height: 100%;
+}
